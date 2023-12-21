@@ -1,12 +1,13 @@
 body {
-  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 15px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #333;
 }
 
 a {
-  transition: opacity .3s;
+  transition: opacity 0.3s;
   text-decoration: none;
   color: #1ca9e3;
 }
@@ -18,7 +19,12 @@ img {
   border-style: none;
 }
 
-
+.works-img video,
+.works-img img {
+  max-width: 100%;
+  height: auto;
+  width: 100%; /* 追加: 幅100%に設定 */
+}
 
 .pc-only {
   display: block;
@@ -58,7 +64,7 @@ img {
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   color: #333;
 }
 
@@ -77,7 +83,7 @@ img {
   z-index: 1;
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  box-shadow: 0 5px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .header .container {
@@ -92,7 +98,7 @@ img {
   font-weight: bold;
   line-height: 1.2;
   margin-right: 20px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .header-logo a {
@@ -115,8 +121,8 @@ img {
   font-weight: bold;
   display: inline-block;
   padding: 5px 0;
-  transition: .3s;
-  letter-spacing: .05em;
+  transition: 0.3s;
+  letter-spacing: 0.05em;
   color: #333;
 }
 .gnav-item a:after {
@@ -126,7 +132,7 @@ img {
   width: 0;
   height: 3px;
   content: "";
-  transition: .3s;
+  transition: 0.3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   background-color: #333;
@@ -156,14 +162,14 @@ img {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 5px;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 40px;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 .mv-text {
@@ -182,13 +188,13 @@ img {
 
 .works-item {
   width: 31.74603%;
-  margin-right: 1.58730%;
+  margin-right: 1.5873%;
   margin-bottom: 40px;
   color: #333;
 }
 
 .works-item:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .works-item:nth-of-type(3n) {
@@ -535,7 +541,7 @@ img {
 
   .article-body h3 {
     font-size: 16px;
-    padding-left: .8em;
+    padding-left: 0.8em;
   }
 
   .article-body h3:not(:first-child) {
