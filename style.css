@@ -56,6 +56,59 @@ img {
 }
 
 /*--------------------------------
+ フェードインアニメーション 
+---------------------------------*/
+.fadein {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.scrollin {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*--------------------------------
+ ホバーアニメーション 
+---------------------------------*/
+.works-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.works-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.works-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.works-item:hover::before {
+  opacity: 1;
+}
+
+.works-item img,
+.works-item video {
+  transition: transform 0.3s;
+}
+
+.works-item:hover img,
+.works-item:hover video {
+  transform: scale(1.1);
+}
+
+/*--------------------------------
  見出し
 ---------------------------------*/
 .title {
